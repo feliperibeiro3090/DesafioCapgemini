@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt('Digite o valor de n'));
+        document.write('<pre>')
+        for (var i=1; i<=n; i++){
+            const esp = '&nbsp;';
+            const char = "*";
+            var txt = "";
+            txt += preencher (esp, (n-i));
+            txt += preencher (char, i);
+            document.write(txt+'<br>');
+        }
+        document.write('</pre>')
+
+        function preencher (char, n){
+            var txt= ""; 
+            for (var i=1; i<=n; i++){
+                txt += char;
+            } 
+            return txt; 
+            console.log 
+        }
+
+    </script>
+    
+</body>
+</html>
